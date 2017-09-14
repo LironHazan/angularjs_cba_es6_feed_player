@@ -1,21 +1,23 @@
 <div class="player">
   <div class="videos" ng-repeat="video in $ctrl.videos">
-    <div class="video-container" ng-if="(video.source === 'facebook')">
-      <div class="video">
-        <video-info video="video"></video-info>
-        <facebook-player video-id="video.videoId"></facebook-player>
+    <div ng-switch="video.source">
+      <div ng-switch-when="facebook">
+        <div class="video-container">
+          <video-info video="video"></video-info>
+          <facebook-player video-id="video.videoId"></facebook-player>
+        </div>
       </div>
-    </div>
-    <div ng-if="(video.source === 'youtube')">
-      <div class="video-container">
-        <video-info video="video"></video-info>
-        <youtube-player video-id="video.videoId"></youtube-player>
+      <div ng-switch-when="youtube">
+        <div class="video-container">
+          <video-info video="video"></video-info>
+          <youtube-player video-id="video.videoId"></youtube-player>
+        </div>
       </div>
-    </div>
-    <div ng-if="(video.source === 'url')">
-      <div class="video-container">
-        <video-info video="video"></video-info>
-        <url-player video-url="video.url"></url-player>
+      <div ng-switch-when="url">
+        <div class="video-container">
+          <video-info video="video"></video-info>
+          <url-player video-url="video.url"></url-player>
+        </div>
       </div>
     </div>
   </div>
