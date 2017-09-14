@@ -6,12 +6,6 @@
 
 	- clone the project
 	- run npm i
-	
-** for dev needs:
-
-	- run npm start
-
-** for serving as a product: 
-
-	- run npm run build
-	- serve the 'dist' content
+	- clone https://github.com/LironHazan/feed-micro-service.git
+	- run npm i
+	- run npm start for both projects
