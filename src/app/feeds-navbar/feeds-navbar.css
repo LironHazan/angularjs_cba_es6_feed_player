@@ -1,0 +1,19 @@
+.navbar {
+   display: flex;
+   justify-content: center;
+   background-color: #f5f5f5;
+   height: 2em;
+   border-bottom: 1px solid;
+   text-transform: uppercase;
+   font-family: sans-serif;
+   font-weight: 300;
+   color: #C8CCCE;
+   padding-top: 1em;
+}
+
+.navbar-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #20375F;
+}

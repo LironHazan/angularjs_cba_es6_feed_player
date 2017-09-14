@@ -1,0 +1,9 @@
+<div class="navbar">
+  <div class="navbar-title"> video feed
+    <select ng-model="$ctrl.selectedSource"
+            ng-options="source for source in $ctrl.sources"
+            ng-change="$ctrl.getSource($ctrl.selectedSource)">
+      <option disabled selected value> -- filter feed -- </option>
+    </select>
+  </div>
+</div>
