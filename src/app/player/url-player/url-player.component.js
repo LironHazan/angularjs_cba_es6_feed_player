@@ -5,5 +5,5 @@ export const urlPlayerComponent = {
     template,
     bindings: {
         videoUrl: '<'
-    },
+    }
 };

@@ -3,7 +3,6 @@ import {urlPlayerComponent} from './url-player/url-player.component';
 import {youtubePlayerComponent} from './youtube-player/youtube-player.component';
 import {facebookPlayerComponent} from './facebook-player/facebook-player.component';
 import {videoInfoComponent} from './info/video-info.component';
-import {playerService} from './player.service.js'
 import './player.css';
 
 export const PlayerModule = angular
@@ -13,5 +12,4 @@ export const PlayerModule = angular
   .component('youtubePlayer', youtubePlayerComponent)
   .component('facebookPlayer', facebookPlayerComponent)
   .component('videoInfo', videoInfoComponent)
-  .service('playerService', playerService)
   .name;

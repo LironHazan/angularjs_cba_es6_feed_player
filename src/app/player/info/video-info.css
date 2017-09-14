@@ -11,4 +11,15 @@
  }
 
 .views {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.views-number {
+  text-transform: uppercase;
+}
+
+.views-text {
+
 }

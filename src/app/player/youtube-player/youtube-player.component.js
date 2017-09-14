@@ -9,7 +9,7 @@ export const youtubePlayerComponent = {
         videoId: '<'
     },
     controller: class youtubePlayerComponent {
-    constructor($sce, playerService) {
+    constructor($sce) {
       'ngInject';
       this.$sce = $sce;
     }
@@ -17,5 +17,5 @@ export const youtubePlayerComponent = {
     $onInit() {
       this.url = this.$sce.trustAsResourceUrl(conf.youtube_player + this.videoId);
      }
-    },
+    }
 };
