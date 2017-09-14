@@ -8,10 +8,7 @@ export const playerComponent = {
         resources: '<'
     },
     controller: class playerComponent {
-    constructor() {
-     'ngInject';
-    }
-
+      // will update the view each time the user will filter by feed type
       $onChanges(changedObj) {
         if (_.get(changedObj, 'resources.currentValue')) {
            this.videos = changedObj.resources.currentValue;
